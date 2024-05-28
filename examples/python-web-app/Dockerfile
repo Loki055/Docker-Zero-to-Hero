@@ -12,6 +12,7 @@ RUN apt-get update && \
 
 ENTRYPOINT ["python3"]
 CMD ["manage.py", "runserver", "0.0.0.0:8000"]
+ENV PIP_BREAK_SYSTEM_PACKAGES 1
 
 
 
